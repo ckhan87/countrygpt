@@ -33,13 +33,17 @@
       <p class="intro">Guess flags, travel the globe, and build your streak across 195 countries.</p>
 
       <div class="level-picker" aria-label="Choose difficulty">
-        <button class="level-card selected" data-level="easy"><span class="level-emoji">🌱</span><span><strong>Easy Explorer</strong><small>20 countries · 5 lives</small></span><i>✓</i></button>
-        <button class="level-card" data-level="medium"><span class="level-emoji">🧭</span><span><strong>Globe Trotter</strong><small>50 countries · 4 lives</small></span><i>✓</i></button>
-        <button class="level-card" data-level="hard"><span class="level-emoji">🔥</span><span><strong>Flag Expert</strong><small>100 countries · 3 lives</small></span><i>✓</i></button>
-        <button class="level-card" data-level="master"><span class="level-emoji">🏆</span><span><strong>World Master</strong><small>All 195 · 3 lives</small></span><i>✓</i></button>
+        <button class="level-card selected" data-level="easy"><span class="level-emoji">🌱</span><span><strong>Easy Explorer</strong><small>Endless · 5 hearts · +♥ every 5</small></span><i>✓</i></button>
+        <button class="level-card" data-level="medium"><span class="level-emoji">🧭</span><span><strong>Globe Trotter</strong><small>Endless · 4 hearts · +♥ every 7</small></span><i>✓</i></button>
+        <button class="level-card" data-level="hard"><span class="level-emoji">🔥</span><span><strong>Flag Expert</strong><small>Endless · 3 hearts · +♥ every 10</small></span><i>✓</i></button>
+        <button class="level-card" data-level="master"><span class="level-emoji">🏆</span><span><strong>World Master</strong><small>Endless · 3 hearts · +♥ every 12</small></span><i>✓</i></button>
       </div>
       <button class="primary-button" id="playButton">Start exploring <span>→</span></button>
-      <p class="country-count"><span>●</span> 195 countries waiting</p>
+      <p class="country-count"><span>●</span> Endless challenge · all 195 countries</p>
+      <section class="leaderboard" aria-label="Local high scores">
+        <div class="leaderboard-head"><strong>🏅 TOP RECORDS</strong><small>ON THIS DEVICE</small></div>
+        <ol id="recordList"></ol>
+      </section>
     </section>
 
     <section class="screen game-screen" id="gameScreen">
@@ -56,7 +60,7 @@
       <div class="answers" id="answers"></div>
       <div class="game-footer">
         <button class="hint-button" id="hintButton"><span>◈</span> 50 / 50</button>
-        <div class="streak"><span>🔥</span><div><strong id="streak">0</strong><small>STREAK</small></div></div>
+        <div class="streak"><span>🔥</span><div><strong id="streak">0</strong><small id="heartGoal">+♥ AT 5</small></div></div>
       </div>
     </section>
 
@@ -65,6 +69,7 @@
       <p class="eyebrow" id="resultEyebrow">JOURNEY COMPLETE</p>
       <h2 id="resultTitle">Great exploring!</h2>
       <p id="resultMessage">You know your way around the world.</p>
+      <div class="record-position" id="recordPosition"></div>
       <div class="result-score"><small>FINAL SCORE</small><strong id="finalScore">0</strong><span id="newBest">NEW BEST!</span></div>
       <div class="result-grid">
         <div><span>✓</span><strong id="correctCount">0</strong><small>CORRECT</small></div>

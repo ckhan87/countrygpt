@@ -2,14 +2,14 @@
 
 A mobile-friendly flag quiz covering 195 countries.
 
-## Game modes
+## Endless game modes
 
-- Easy Explorer: 20 countries and 5 hearts
-- Globe Trotter: 50 countries and 4 hearts
-- Flag Expert: 100 countries and 3 hearts
-- World Master: all 195 countries and 3 hearts
+- Easy Explorer: 5 starting hearts and a bonus heart every 5-answer streak
+- Globe Trotter: 4 starting hearts and a bonus heart every 7-answer streak
+- Flag Expert: 3 starting hearts and a bonus heart every 10-answer streak
+- World Master: 3 starting hearts and a bonus heart every 12-answer streak
 
-Choose the correct country, build a streak, and use the 50/50 hint when needed. The game ends when all hearts are used and displays the final score, correct answers, and best streak.
+Every run starts at zero points and continues until all hearts are lost. Streaks award increasingly valuable combo points, milestone streaks restore hearts, and using 50/50 reduces the points available for that question. The five highest scores are saved on the device with the difficulty, correct-answer count, and best streak.
 
 ## Play
 
